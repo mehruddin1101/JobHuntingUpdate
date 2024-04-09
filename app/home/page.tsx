@@ -20,15 +20,18 @@ export default function Home() {
 
 //   data-theme="light"
   return (
-    <div  data-theme="light">
+    <div style={{backgroundColor:'#F7F8F9'}}>
    <p style={{textAlign:'center', color:'red', fontSize:'1.6rem'}}>  
     <a  target="_blank" href  = "https://techfynder.com/Fresher-jobs-in-India">   <h1> Top mncs are Hiring  <b style={{marginLeft:'20px'}}> find the Fresheres job in india </b></h1> </a>
    </p>
-    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '8rem', marginLeft: '20rem' }} >
+    <div className='home-container'  >
 
-      <div style={{ marginRight: '5rem', marginTop: '1rem', width: '60%' }}>
+       
+
         
-        <div className="card card-side bg-base-100 shadow-xl" data-theme="light">
+      <div className='card-style '>
+        
+        <div className=" card card-side bg-base-100 shadow-xl" data-theme="light">
           <figure><img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" /></figure>
           <div className="card-body">
             <h2 className="card-title">New movie is released!</h2>
@@ -79,9 +82,9 @@ export default function Home() {
         <div className=" bg-base-100 shadow-xl mt-10 p-5 " data-theme="light" >
             <span> 
                 <span>
-                    preb
+                    prev 
                 </span>
-                <span> 
+                <span style={{marginLeft:'20px'}}> 
                     next
                 </span>
             </span>
@@ -89,32 +92,14 @@ export default function Home() {
 
       </div>
 
-      <div style={{ width: '40%' }}>
+      <div className='home-linkStyle'>
        
-        {/* <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-         
-          <button
-            className="btn btn-primary"
-            onClick={handlePreviousPage}
-            disabled={currentPage === 1} 
-          >
-            Previous
-          </button>
-
-          
-          <button
-            className="btn btn-primary"
-            onClick={handleNextPage}
-          
-          >
-            Next
-          </button>
-        </div> */}
-
-        {/* Render Links component */}
+       
         <Links />
       </div>
-    </div>
+      </div>
+
+    
     </div>
   );
 }
