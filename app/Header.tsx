@@ -129,7 +129,7 @@ const Header = () => {
 
               /> */}
 
-<h1 style={{color:"green"}}>  JOB HUNTING</h1>
+              <h1 style={{color:"green"}}>  JOB HUNTING</h1>
             </a>
             <button
               type="button"
@@ -174,25 +174,19 @@ const Header = () => {
                 >
                   Features
                 </a> */}
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Work From Home
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Off campus Drive
-                </a>
+                <a target="_blank" href="https://www.foundit.in/seeker/registration?spl=IN_paid_display_direct_acq_affiliate_Opicle_AffID_SubID_Multiple_All_Apr_24&utm_source=Opicle&utm_medium=affiliate&utm_campaign=IN_paid_display_direct_acq_affiliate_Opicle_AffID_SubID_Multiple_All_Apr_24" className="text-sm font-semibold leading-6 text-gray-900">
+                   <p style={{marginBottom:'20px', marginTop:'20px'}}> Work from Home </p> 
+                  </a>
+                    <Link href="/home" className="text-sm font-semibold leading-6 text-gray-900">
+                Off campus Drive
+              </Link >
               </div>
               <div className="py-6">
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                   Intership <span aria-hidden="true">&rarr;</span>
                 </a>
               </div>
             </div>
