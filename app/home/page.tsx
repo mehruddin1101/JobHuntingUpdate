@@ -6,7 +6,7 @@ import Links from "../components/links/links";
 export default function Home() {
   // State to track the current page
   const [currentPage, setCurrentPage] = useState(1);
-  const [loding, setLoading] = useState(true);
+  const [loding, setLoading] = useState(false);
 
   // Function to handle next page
   const handleNextPage = () => {
@@ -22,26 +22,26 @@ export default function Home() {
   return (
     <div style={{ backgroundColor: "#F7F8F9" }}>
       {loding ? (
-        <div  style={{width:'100%', display:'flex', alignItems:'center', justifyContent:'center', flexDirection:'column'}} >
+        <div className="skeleton-loading" >
 
-        <div className="flex  " style={{width:'40%', display:'flex', alignItems:'center', marginTop:'4rem'}} >
-              <div className="flex flex-col gap-4">
+        <div className="flex skeleton-loading-card "  >
+              <div className="flex flex-col gap-4"  >
               </div>
-            <div className="skeleton h-32 w-full"></div>
+            <div className="skeleton h-32 w-full"  style={{height:'40vh'}}></div>
         </div>
 
-        <div className="flex flex-col gap-4 w-52 " style={{width:'40%', display:'flex', alignItems:'center', marginTop:'4rem'}} >
+        <div className="flex flex-col gap-4 w-52 skeleton-loading-card "  >
 
             <div className="flex flex-col ">
              </div>
-          <div className="skeleton h-32 w-full"></div>
+          <div className="skeleton h-32 w-full " style={{height:'40vh'}}></div>
         </div>
 
-        <div className="flex flex-col gap-4 w-52 " style={{width:'40%', display:'flex', alignItems:'center', marginTop:'4rem'}} >
+        <div className="flex flex-col gap-4 w-52  skeleton-loading-card"  >
 
           <div className="flex flex-col gap-4">
           </div>
-          <div className="skeleton h-32 w-full"></div>
+          <div className="skeleton h-32 w-full"  style={{height:'40vh'}}></div>
         </div>
 
 
