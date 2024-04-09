@@ -1,6 +1,6 @@
 import React from 'react';
-import Image1 from '../assets/img1.jpeg'
-
+import Image from 'next/image';
+import  {data} from '../../data/data'
 export default function About() {
   return (
     <div className="about-page p-8" style={{color:'black'}} data-theme="light">
@@ -31,57 +31,17 @@ export default function About() {
         short of exceptional.
       </p>
       <div className="carousel carousel-end rounded-box" data-theme="light">
-        <div className="carousel-item">
-           <img
-            src=""
-          alt="Drink"
-          className="rounded"
-        />
-          
-        
+            <div className="carousel-item">
+            {data.map((item, index) => (
+      <div key={index} className="carousel-item">
+        <img height="400px" width="400px" src={item.url} alt="Drink" className="rounded" />
+      </div>
+      ))}
+
         </div>
-        <div className="carousel-item">
-          <img
-            src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg"
-            alt="Drink"
-            className="rounded"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
-            alt="Drink"
-            className="rounded"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg"
-            alt="Drink"
-            className="rounded"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg"
-            alt="Drink"
-            className="rounded"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
-            alt="Drink"
-            className="rounded"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
-            alt="Drink"
-            className="rounded"
-          />
-        </div>
+
+       
+
       </div>
     </div>
   );

@@ -33,7 +33,7 @@ const Header = () => {
             <span className="sr-only">Your Company</span>
             {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" /> */}
 
-            <Link   style={{color:"green"}}  href="/" className="link link-hover">JOB HUNTING</Link>
+            <Link   style={{color:"green"}}  href="/home" className="link link-hover">JOB HUNTING</Link>
             <h1>  </h1>
           </a>
         </div>
