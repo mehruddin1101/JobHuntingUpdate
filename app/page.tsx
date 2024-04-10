@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from "./Header";
 import Footer from "./Footer";
-import Content from "./job/page";
+
 import Links from "./components/links/links";
 
 import HomePage from './home/page'
