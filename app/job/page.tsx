@@ -79,7 +79,9 @@ const Content: React.FC<ContentProps> = ({data}) => {
       <div className="flex flex-col md:flex-row items-center md:space-x-4">
         {/* Image */}
         <div className="md:w-1/2 mb-4 md:mb-0">
+        /* eslint-disable @next/next/no-img-element */
           <img src={data.cardPhoto} alt="GamesKraft" className="w-full rounded-lg shadow-md" />
+          /* eslint-disable @next/next/no-img-element */
         </div>
 
         {/* Job description */}
