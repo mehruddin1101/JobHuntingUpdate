@@ -12,7 +12,7 @@ const JobSummary: React.FC<JobSummaryProps> = ({ title, role, description }) => 
       <ul>
        <li>
         
-       <Editor  className='mt-4' value={description} readOnly style={{ height: 'auto',  fontSize:'1.1rem'}} />
+       <Editor   headerTemplate={<></>} className='mt-4' value={description} readOnly style={{ height: 'auto',  fontSize:'1.1rem'}} />
        </li>
        
       </ul>

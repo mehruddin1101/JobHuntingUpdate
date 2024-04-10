@@ -11,7 +11,7 @@ const Responsibility: React.FC<ResponsibilityProps> = ({ description }) => {
       <div className="pl-4 mt-4">
         <ul style={{ color: "black" }} className="list-disc">
         
-           <Editor className="mt-4"  value={description} readOnly style={{ height: 'auto' ,fontSize:'1rem'}} />
+           <Editor headerTemplate={<></>} className="mt-4"  value={description} readOnly style={{ height: 'auto' ,fontSize:'1rem'}} />
         </ul>
       </div>
     </>

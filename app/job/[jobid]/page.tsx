@@ -85,7 +85,7 @@ const Jobs = ({params}: {
           <Role role={singlejob?.jobTitle} organizationName={singlejob?.organizationName} batch={singlejob?.batch}  />
           <Responsibility description={singlejob?.job_Description}  />
           <Qualification batch={singlejob?.batch} />
-          <SkillRequirement />
+          {/* <SkillRequirement /> */}
           <Designation />
           <HowToApply appyInstructions={singlejob?.appyInstructions} />
          <ApplyLink appyLink={singlejob?.appyLink} />
