@@ -5,13 +5,66 @@ import Links from "../../components/links/links";
 import { useEffect, useState } from "react";
 import Content from "../page";
 
+interface JobData {
+  jobId: string;
+  postTitle: string;
+  jobTitle: string;
+  organizationName: string;
+  organizationWebsite: string;
+  aboutOrganization: string;
+  jobRole: string;
+  qualification: string;
+  experience: string;
+  batch: string;
+  salary: string;
+  jobLocation: string;
+  lastApplyDate: string;
+  job_Description: string;
+  appyInstructions: string;
+  appyLink: string;
+  whatsAppGroupLink: string;
+  telegramGroupLink: string;
+  instagramLink: string;
+  linkedInLink: string;
+  short_Description: string;
+  long_Description: string;
+  coverPhoto: string;
+  cardPhoto: string;
+  logo: string | null;
+  remarks: string;
+  statusId: number;
+  categoryId: number;
+  statusUpdatedBy: string | null;
+  statusUpdatedDate: string | null;
+  categoryMaster: any;
+  statusMaster: {
+    statusId: number;
+    name: string;
+    isActive: boolean;
+    isDeleted: boolean;
+    createdBy: string | null;
+    createdDate: string;
+    modifiedBy: string | null;
+    modifiedDate: string | null;
+  };
+  id: number;
+  isActive: boolean;
+  isDeleted: boolean;
+  createdBy: string | null;
+  createdDate: string;
+  modifiedBy: string | null;
+  modifiedDate: string | null;
+  ipaddress: string | null;
+  browser: string | null;
+}
+
 const Jobs = ({params}:{
   params : {jobid:string}
 }) => {
- 
   const Jobid = params.jobid;
  
-  const [singlejob, setSingleJob] = useState([]); 
+  const [singlejob, setSingleJob] = useState<JobData | null>(null);
+
   const [loading, setLoading] = useState(false)
 
   const GetSinglejOb = async () =>  {
@@ -66,7 +119,7 @@ const Jobs = ({params}:{
       <div style={{ display: "flex" }} className="link-content" data-theme="light">
         {/* Content (80%) */}
         <div style={{ flex: "1", marginRight: shouldApplyStyle ? "20px" : 0 }} className="container">
-        <Content data={singlejob} />
+        {singlejob && <Content data={singlejob} />}
         </div>
 
       

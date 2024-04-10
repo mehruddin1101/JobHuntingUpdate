@@ -90,15 +90,15 @@ const  HomePage =() => {
               {
                 jobs.map((data: any)=>{
                  return (
-                  <div className="card card-side bg-base-100 shadow-x mt-10" data-theme="light">
+                  <div key ={data.id} className="card card-side bg-base-100 shadow-x mt-10" data-theme="light">
                   <figure >
-                    /* eslint-disable @next/next/no-img-element */
+               
                     <img
                       src={data.cardPhoto}
                       alt="Movie"
                       style={{  height:'30vh', maxHeight:'100%' }}
                     />
-                  /* eslint-enable @next/next/no-img-element */
+                  
                   </figure>
                   <div className="card-body">
                     <h2 className="card-title"> {data.postTitle} </h2>
