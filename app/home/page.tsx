@@ -96,7 +96,7 @@ const  HomePage =() => {
                     <img
                       src={data.cardPhoto}
                       alt="Movie"
-                      style={{  height:'30vh', maxHeight:'100%' }}
+                      style={{  height:'30vh', maxHeight:'100%', objectFit:'contain' }}
                     />
                   
                   </figure>

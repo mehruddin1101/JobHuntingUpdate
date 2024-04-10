@@ -20,6 +20,8 @@ const Jobs = ({params}: {
   const [singlejob, setSingleJob] = useState<any>(null); // Define the type for singlejob
   const [loading, setLoading] = useState(true); // Set loading to true initially
 
+  console.log(singlejob)
+
   const GetSingleJob = useCallback(async () => {
     try {
       const response = await fetch(`https://developnators.azurewebsites.net/api/JobHunting/GetJobWeb/${Jobid}`);
@@ -85,8 +87,8 @@ const Jobs = ({params}: {
           <Qualification batch={singlejob?.batch} />
           <SkillRequirement />
           <Designation />
-          <HowToApply appyInstructions={singlejob?.applyInstructions} />
-          <ApplyLink appyLink={singlejob?.applyLink} />
+          <HowToApply appyInstructions={singlejob.appyInstructions} />
+         <ApplyLink appyLink={singlejob.appyLink} />
         </div>
 
         {shouldApplyStyle ? (
