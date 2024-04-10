@@ -105,7 +105,7 @@ const Header = () => {
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             
           </a>
-          <Link href="/home" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link href="/" className="text-sm font-semibold leading-6 text-gray-900">
             Off campus Drive
           </Link >
         </Popover.Group>

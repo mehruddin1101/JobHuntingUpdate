@@ -11,7 +11,7 @@ export default function Contact() {
   }, []);
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'white', minHeight: '100vh' }}>
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'white', minHeight: '80vh' }}>
       <div className="mockup-phone" style={{ width: '400px' }}>
         <div>
           <div className="camera"></div>
