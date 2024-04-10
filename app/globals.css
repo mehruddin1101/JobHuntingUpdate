@@ -46,9 +46,11 @@
 }
 
 .links-container {
+ 
 }
 
-@media (max-width: 756px) {
+
+@media (max-width:  728px) {
   .card-data-links {
     height: auto;
     padding: 1rem;
@@ -214,9 +216,42 @@
 .hide {
   opacity: 0;
 }
+.term-services {
+  background-color: #F7F8F9;
+  width: 60%;
+  padding: 20px;
+  border-radius: 8px;
+  color: black;
+  max-height: 100vh;
+  min-height: 50vh; /* You can adjust the minimum height as needed */
+  overflow-y: auto; /* Adding scroll if content exceeds max height */
+}
+
+.term-container{
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+@media screen and (max-width: 728px) {
+  .term-services {
+    background-color: #F7F8F9;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    color: black;
+    height: auto;
+  }.term-container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+}
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width:  728px) {
   .home-container {
     flex-direction: column;
      margin-left: 0

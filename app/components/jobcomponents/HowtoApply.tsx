@@ -12,7 +12,7 @@ const HowToApply:React.FC<ApplyInstruction> = ({appyInstructions}) =>{
         <h2 style={{color:'black'}}> 
        
 
-        <Editor  headerTemplate={<></>}  className="mt-4" value={appyInstructions} readOnly style={{ height: 'auto', fontSize:'1rem' }} />
+        <Editor  headerTemplate={<div className=""></div>}  className="mt-4" value={appyInstructions} readOnly style={{ height: 'auto', fontSize:'1rem' }} />
        
         </h2>
         </>

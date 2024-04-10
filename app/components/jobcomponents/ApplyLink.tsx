@@ -10,7 +10,7 @@ const ApplyLink: React.FC<AppyLinkProps> = ({ appyLink }) => {
     }
 
     return (
-        <div  style={{ marginTop: '100px',  boxShadow:'1px 1px 1px 1px grey'}}  data-theme="light"  >
+        <div   style={{ marginTop: '100px',  boxShadow:'1px 1px 1px 1px grey'}}  data-theme="light"  >
             <div style={{ display: 'flex', gap: '10px' }}>
                 <h1 style={{ color: 'black', fontWeight: 'bold' }}>Apply Link</h1>
                 <a style={{color:'blue'}} href={appyLink}>Link</a>

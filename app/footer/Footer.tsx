@@ -8,6 +8,9 @@ const Footer = () => {
           <Link   href="/about" className="link link-hover">About us</Link>
           <Link href ="/contact" className="link link-hover"> Contact</Link>
           <Link  href="/" className="link link-hover">Jobs</Link>
+          <Link  href="/term-services" className="link link-hover"> Terms of Service</Link>
+          <Link  href="/privacy-policy" className="link link-hover"> Privacy Policy</Link>
+         
         
         </nav>
         <nav>

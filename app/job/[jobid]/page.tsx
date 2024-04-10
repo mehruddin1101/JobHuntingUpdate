@@ -57,7 +57,7 @@ const Jobs = ({params}: {
   }, []);
 
   return (
-    <>
+    <div style={{backgroundColor:'#F7F8F9'}}>
       <Head>
         <title>Jobs Page</title> 
         <meta name="description" content="Your job listings page description" />  
@@ -107,7 +107,7 @@ const Jobs = ({params}: {
           }
         }
       `}</style>
-    </>
+    </div>
   );
 };
 
