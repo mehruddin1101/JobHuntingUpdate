@@ -3,7 +3,7 @@ interface JobSummaryProps {
   role: string;
   description: string;
 }
-
+import { Editor } from 'primereact/editor';
 const JobSummary: React.FC<JobSummaryProps> = ({ title, role, description }) => {
   return (
     <div className="p-4 rounded shadow-md" style={{ backgroundColor: 'EDF6FF' }}>
@@ -11,7 +11,8 @@ const JobSummary: React.FC<JobSummaryProps> = ({ title, role, description }) => 
       <p className="text-gray-700 mb-4">Responsibilities:</p>
       <ul>
        <li>
-      <div dangerouslySetInnerHTML={{ __html: description }} />
+        
+       <Editor  className='mt-4' value={description} readOnly style={{ height: 'auto',  fontSize:'1.1rem'}} />
        </li>
        
       </ul>

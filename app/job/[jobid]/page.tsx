@@ -87,8 +87,8 @@ const Jobs = ({params}: {
           <Qualification batch={singlejob?.batch} />
           <SkillRequirement />
           <Designation />
-          <HowToApply appyInstructions={singlejob.appyInstructions} />
-         <ApplyLink appyLink={singlejob.appyLink} />
+          <HowToApply appyInstructions={singlejob?.appyInstructions} />
+         <ApplyLink appyLink={singlejob?.appyLink} />
         </div>
 
         {shouldApplyStyle ? (
