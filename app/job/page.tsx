@@ -17,7 +17,7 @@ interface JobData {
   aboutOrganization: string;
   jobRole: string;
   qualification: string;
-  experience: string | null; // It seems 'experience' can be a string or null
+  experience: string 
   batch: string;
   salary: string;
   jobLocation: string;
@@ -58,7 +58,8 @@ interface JobData {
   modifiedBy: string | null; // It seems 'modifiedBy' can be a string or null
   modifiedDate: string | null; // It seems 'modifiedDate' can be a string or null
   ipaddress: string | null; // It seems 'ipaddress' can be a string or null
-  browser: string | null; // It seems 'browser' can be a string or null
+  browser: string | null; // It seems 'browser' can be a string or null,
+ 
 }
 
 
