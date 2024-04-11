@@ -28,7 +28,7 @@ const Links = () => {
   }, []);
 
   return (
-    <div>
+    <div  className="mt-10">
       <div className="links-container">
         <div className="card-data"></div>
 
@@ -39,12 +39,13 @@ const Links = () => {
         <div className="links-wrapper card-data-links">
           {links.map((res: any, index) => {
             return (
-              <div style={{ display: "flex", padding:'1rem'}} key={index}>
-                <a className="mt-0 " href={res.appyLink}>
+              <div style={{ display: "flex",}} key={index}>
+                <a style={{padding:'2rem'}} className="mt-0 " href={res.appyLink}>
                   
-                  <span style={{ color: "blue", overflow: "hidden" }}>
+                  <span style={{ color: "blue", overflow: "hidden",  marginTop:'-10px'}}>
                     {res.postTitle}
                   </span>{" "}
+                  <hr></hr>
                 </a>
               </div >
             );
