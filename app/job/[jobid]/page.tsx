@@ -20,7 +20,7 @@ const Jobs = ({params}: {
   const [singlejob, setSingleJob] = useState<any>(null); // Define the type for singlejob
   const [loading, setLoading] = useState(true); // Set loading to true initially
 
-  console.log(singlejob)
+
 
   const GetSingleJob = useCallback(async () => {
     try {
