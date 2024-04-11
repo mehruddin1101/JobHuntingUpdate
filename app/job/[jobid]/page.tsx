@@ -30,7 +30,9 @@ const Jobs = ({params}: {
       }
       const data = await response.json();
       setSingleJob(data);
-      setLoading(false); // Set loading to false when data is fetched
+      setLoading(false); 
+      console.log("data",data )
+
     } catch (error) {
       console.error('Error fetching job:', error);
     }
@@ -80,14 +82,14 @@ const Jobs = ({params}: {
             </div>
           </div>
 
-          <JobSummary title={singlejob?.jobTitle} role={singlejob?.jobTitle} description={singlejob?.job_Description} />
+          <JobSummary title={singlejob?.jobRole} role={singlejob?.jobRole} description={singlejob?.job_Description} />
           <HiringDetails role={singlejob?.jobRole} Jobqualifications={singlejob?.qualification} experience={singlejob?.experience} batch={singlejob?.batch} salary={singlejob?.salary} lastDate={singlejob?.lastApplyDate} location={singlejob?.jobLocation} telegramLink={singlejob?.telegramGroupLink} organizationName={singlejob?.organizationName} />
-          <Role role={singlejob?.jobTitle} organizationName={singlejob?.organizationName} batch={singlejob?.batch}  />
+          <Role role={singlejob?.jobRole} organizationName={singlejob?.organizationName} batch={singlejob?.batch}  />
           <Responsibility description={singlejob?.job_Description}  />
-          <Qualification batch={singlejob?.batch} />
+          <Qualification batch={singlejob?.batch} Jobqualifications={singlejob?.qualification} />
           {/* <SkillRequirement /> */}
-          <Designation />
-          <HowToApply appyInstructions={singlejob?.appyInstructions} />
+          <Designation  title={singlejob?.organizationName} role={singlejob?.jobRole} description={singlejob?.job_Description}  />
+          <HowToApply appyInstructions={singlejob?.appyInstructions} organizationName={singlejob?.organizationName}  />
          <ApplyLink appyLink={singlejob?.appyLink} />
         </div>
 

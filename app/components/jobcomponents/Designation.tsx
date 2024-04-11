@@ -1,9 +1,15 @@
 import PlaceHolder from "./PlaceHolder";
+interface Designation {
 
-const Designation = () =>{
+  title:string,
+  role:string,
+  description: string
+}
+
+const Designation : React.FC<Designation> = ({title,role, description}) =>{
     return (
         <>
-          <PlaceHolder text="Designation GamesKraft Careers – Software Engineer – Data Engineering" />
+          <PlaceHolder text={`${title} Careers – ${role}`} />
         </>
     )
 }

@@ -3,12 +3,13 @@ import PlaceHolder from "./PlaceHolder";
 import { Editor } from 'primereact/editor';
         
 interface ApplyInstruction{
-    appyInstructions :string
+    appyInstructions :string,
+    organizationName:string,
 }
-const HowToApply:React.FC<ApplyInstruction> = ({appyInstructions}) =>{
+const HowToApply:React.FC<ApplyInstruction> = ({appyInstructions,organizationName}) =>{
     return (
         <>
-        <PlaceHolder text = "How to Apply For GamesKraft Careers 2024 Hiring?"/>
+        <PlaceHolder text = {`How to Apply For ${organizationName}  Hiring?`}/>
         <h2 style={{color:'black'}}> 
        
 

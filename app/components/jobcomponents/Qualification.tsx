@@ -1,9 +1,10 @@
 import React from "react";
 import PlaceHolder from "./PlaceHolder";
 interface Qualification{
-  batch:string
+  batch:string,
+  Jobqualifications:string
 }
-const Qualification:React.FC<Qualification> = ({batch}) => {
+const Qualification:React.FC<Qualification> = ({batch,Jobqualifications}) => {
   return (
     <>
       <PlaceHolder text="Qualification" />
@@ -11,6 +12,11 @@ const Qualification:React.FC<Qualification> = ({batch}) => {
         <ul className="list-disc">
           <li style={{color:'black'}}>
             {batch}
+            <br></br>
+            <li>
+
+             {Jobqualifications}
+            </li>
           </li>
         </ul>
       </div>
