@@ -1,4 +1,4 @@
-import Link from "next/link";
+'use client'
 import React, { useEffect, useState } from "react";
 import DevelopNators from "../../../public/developnators1.png"; // Correct image import path
 
