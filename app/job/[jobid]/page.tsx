@@ -60,12 +60,23 @@ const Jobs = ({params}: {
 
   return (
     <div style={{backgroundColor:'#F7F8F9'}}>
+      <p  style={{ textAlign: "center", color: "red", fontSize: "1.6rem", position: 'relative', top: "calc(100px)" ,backgroundColor: "#F7F8F9" ,}}>
+          <a
+            target="_blank"
+            href="https://techfynder.com/Fresher-jobs-in-India"
+          >
+            <h1>
+              Top MNCs are Hiring{" "}
+              <b style={{ marginLeft: "20px" }}>find the Fresher job in India</b>
+            </h1>
+          </a>
+        </p>
       <Head>
         <title>Jobs Page</title> 
         <meta name="description" content="Your job listings page description" />  
       </Head>
 
-      <div style={{ display: "flex" }} className="link-content" data-theme="light">
+      <div style={{ display: "flex" , position: 'relative', top: "calc(100px)", padding:'2rem',backgroundColor: "#F7F8F9"}}  className="link-content" data-theme="light" >
         <div style={{ flex: "1", marginRight: shouldApplyStyle ? "20px" : 0 }} className="container">
           <h1><b>{singlejob?.organizationName}</b></h1>
           <p className="mb-2">{singlejob?.aboutOrganization}</p>

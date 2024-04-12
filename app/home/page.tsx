@@ -54,7 +54,7 @@ const HomePage = () => {
   console.log(totalPages)
 
   return (
-    <div style={{ backgroundColor: "#F7F8F9" }}>
+    <div style={{ backgroundColor: "#F7F8F9" ,}}>
       {loading ? (
         <div className="skeleton-loading">
           <div className="flex skeleton-loading-card ">
@@ -67,17 +67,18 @@ const HomePage = () => {
         </div>
       ) : (
         <div style={{ backgroundColor: "#F7F8F9" }}>
-          <p style={{ textAlign: "center", color: "red", fontSize: "1.6rem" }}>
-            <a
-              target="_blank"
-              href="https://techfynder.com/Fresher-jobs-in-India"
-            >
-              <h1>
-                Top mncs are Hiring{" "}
-                <b style={{ marginLeft: "20px" }}>find the Fresheres job in india</b>
-              </h1>
-            </a>
-          </p>
+      <p style={{ textAlign: "center", color: "red", fontSize: "1.6rem", position: 'relative', top: "calc(100px + 2rem)" }}>
+          <a
+            target="_blank"
+            href="https://techfynder.com/Fresher-jobs-in-India"
+          >
+            <h1>
+              Top MNCs are Hiring{" "}
+              <b style={{ marginLeft: "20px" }}>find the Fresher job in India</b>
+            </h1>
+          </a>
+        </p>
+
           <div className="home-container">
             <div className="card-style">
               {jobs &&

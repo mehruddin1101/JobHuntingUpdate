@@ -11,10 +11,10 @@ export default function Contact() {
   }, []);
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'white', minHeight: '80vh' }}>
-      <div className="mockup-phone" style={{ width: '400px' }}>
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'white', minHeight: '80vh', }}>
+      <div className="mockup-phone" style={{ width: '400px' ,position: 'relative', marginTop: 'calc(120px)'}}>
         <div>
-          <div className="camera"></div>
+          <div className="camera" ></div>
 
           <div className="display" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <div className={`artboard artboard-demo phone-1 ${showEmail ? 'show' : 'hide'}`}>Hi.

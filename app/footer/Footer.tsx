@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <>
+    <div style={{  position: 'relative',backgroundColor:'#F7F8F9'} } >
       <footer  className="footer footer-center p-10 bg-base-200 text-base-content rounded footer-postion " data-theme="light">
         <nav className="grid grid-flow-col gap-4">
           <Link   href="/about" className="link link-hover">About us</Link>
@@ -54,7 +54,7 @@ const Footer = () => {
           <p>Copyright © 2024 - All right reserved by Developnators</p>
         </aside>
       </footer>
-    </>
+    </div>
   );
 };
 

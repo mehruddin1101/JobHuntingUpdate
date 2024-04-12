@@ -20,28 +20,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <p style={{ textAlign: "center", color: "red", fontSize: "1.6rem" }}>
-            <a
-              target="_blank"
-              href="https://techfynder.com/Fresher-jobs-in-India"
-            >
-             
-              <h1>
-               
-                Top mncs are Hiring{" "}
-                <b style={{ marginLeft: "20px" }}>
-                
-                  find the Fresheres job in india
-                </b>
-              </h1>
-            </a>
-          </p>
+      
 
       </head>
       <body className={inter.className}>
         <Header /> 
-        <main>{children}</main>
-        <Footer /> 
+        
+
+        <main  style={{backgroundColor:'#F7F8F9'}}>{children}</main>
+        <Footer  /> 
       </body>
     </html>
   );
